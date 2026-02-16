@@ -1,0 +1,215 @@
+<html>
+<head>
+<title>TestNG:  AppSavy Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>AppSavy Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Feb 16 18:14:40 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>47 seconds (47449 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.example.tests.Textboxtest.testVerifyAlphanumericDataTypeAllowsAlphaNumericInput()'><b>testVerifyAlphanumericDataTypeAllowsAlphaNumericInput</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify the behavior of the 'Data Type' property on the Textbox for Alphanumeric  data type as Textbox can take both number and alphabets as input.</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.microsoft.playwright.Locator.click()&quot; because &quot;this.saveButton&quot; is null
+	at com.example.pages.Textbox.VerifyAlphanumericDataTypeAllowsAlphaNumericInput(Textbox.java:341)
+	at com.example.tests.Textboxtest.testVerifyAlphanumericDataTypeAllowsAlphaNumericInput(Textboxtest.java:166)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1205580258", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1205580258'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.microsoft.playwright.Locator.click()&quot; because &quot;this.saveButton&quot; is null
+	at com.example.pages.Textbox.VerifyAlphanumericDataTypeAllowsAlphaNumericInput(Textbox.java:341)
+	at com.example.tests.Textboxtest.testVerifyAlphanumericDataTypeAllowsAlphaNumericInput(Textboxtest.java:166)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.example.tests.Textboxtest@b3ca52e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.example.tests.Textboxtest.testMaxLengthFunctionality()'><b>testMaxLengthFunctionality</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify max length Functionality</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.Textboxtest@b3ca52e</td></tr>
+<tr>
+<td title='com.example.tests.Textboxtest.testValidEmailSubmitsFormSuccessfully()'><b>testValidEmailSubmitsFormSuccessfully</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify that the form is submitted successfully when a valid email is entered.</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.Textboxtest@b3ca52e</td></tr>
+<tr>
+<td title='com.example.tests.Textboxtest.testMultilingualFunctionality()'><b>testMultilingualFunctionality</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify Multilingual Functionality<br>Parameters: yes, [Ljava.lang.String;@56c9bbd8</td>
+<td></td>
+<td>1</td>
+<td>com.example.tests.Textboxtest@b3ca52e</td></tr>
+<tr>
+<td title='com.example.tests.Textboxtest.testDefaultValueVisible()'><b>testDefaultValueVisible</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify the behavior of the 'Default Value' property on the Textbox.</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.Textboxtest@b3ca52e</td></tr>
+<tr>
+<td title='com.example.tests.Textboxtest.testCaptionBackgroundColor()'><b>testCaptionBackgroundColor</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify caption background color</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.Textboxtest@b3ca52e</td></tr>
+<tr>
+<td title='com.example.tests.Textboxtest.testverifyCaptionShowTest()'><b>testverifyCaptionShowTest</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify the behavior of the 'Show Caption' property working correctly when I select show caption as ON.</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.Textboxtest@b3ca52e</td></tr>
+<tr>
+<td title='com.example.tests.Textboxtest.testValueBackgroundColor()'><b>testValueBackgroundColor</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify value background color</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.Textboxtest@b3ca52e</td></tr>
+<tr>
+<td title='com.example.tests.Textboxtest.Multilingual()'><b>Multilingual</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Naviagte to textbox form</td>
+<td></td>
+<td>22</td>
+<td>com.example.tests.Textboxtest@b3ca52e</td></tr>
+<tr>
+<td title='com.example.tests.Textboxtest.testVerifyCaptionNotShown()'><b>testVerifyCaptionNotShown</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify that the behavior of the 'Show Caption' property on the text box when I select DO NOT SHOW  option .</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.Textboxtest@b3ca52e</td></tr>
+<tr>
+<td title='com.example.tests.Textboxtest.testMultilingualFunctionality()'><b>testMultilingualFunctionality</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify Multilingual Functionality<br>Parameters: no, [Ljava.lang.String;@f79a760</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.Textboxtest@b3ca52e</td></tr>
+<tr>
+<td title='com.example.tests.Textboxtest.testCaptionTextColor()'><b>testCaptionTextColor</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify caption text color</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.Textboxtest@b3ca52e</td></tr>
+<tr>
+<td title='com.example.tests.Textboxtest.testValueFontSize()'><b>testValueFontSize</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify value font size</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.Textboxtest@b3ca52e</td></tr>
+<tr>
+<td title='com.example.tests.Textboxtest.testInvalidEmailShowsErrorPopup()'><b>testInvalidEmailShowsErrorPopup</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify that an error message is shown when an invalid email is entered and the form is not submitted.</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.Textboxtest@b3ca52e</td></tr>
+<tr>
+<td title='com.example.tests.Textboxtest.testCaptionIsDisplayedOnLeftOfTextbox()'><b>testCaptionIsDisplayedOnLeftOfTextbox</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify that on caption type  If I set Left then caption should left on textbox.</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.Textboxtest@b3ca52e</td></tr>
+<tr>
+<td title='com.example.tests.Textboxtest.testValueTextColor()'><b>testValueTextColor</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify value text color</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.Textboxtest@b3ca52e</td></tr>
+<tr>
+<td title='com.example.tests.Textboxtest.testCaptionFontSize()'><b>testCaptionFontSize</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify caption font size</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.Textboxtest@b3ca52e</td></tr>
+<tr>
+<td title='com.example.tests.Textboxtest.testUniqueProperty()'><b>testUniqueProperty</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify the behavior of the 'Unique' property on the Textbox</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.Textboxtest@b3ca52e</td></tr>
+</table><p>
+</body>
+</html>

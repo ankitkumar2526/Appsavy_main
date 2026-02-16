@@ -1,0 +1,8 @@
+name: Playwright POM + ExtentReports Suite
+configFailurePolicy: skip
+listeners:
+  - com.example.listeners.ExtentReportListener
+tests:
+  - name: AppSavy Tests
+  classes:
+    - com.example.tests.Radiobuttontest
