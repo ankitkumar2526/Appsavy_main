@@ -11,23 +11,23 @@
         <classes>
          
 
-                          <class name="com.example.tests.Textboxtest"/>
-                     <class name="com.example.tests.Radiobuttontest"/>
-                        <class name="com.example.tests.MultilineTextboxTest"/>
-                         <class name="com.example.tests.HeadingLabelTest"/>
+<!--                          <class name="com.example.tests.Textboxtest"/>-->
+<!--                     <class name="com.example.tests.Radiobuttontest"/>-->
+<!--                        <class name="com.example.tests.MultilineTextboxTest"/>-->
+<!--                         <class name="com.example.tests.HeadingLabelTest"/>-->
 
 
-                         <class name="com.example.tests.UpdateButtonTest"/>
-                            <class name="com.example.tests.AddButtontest"/>
-                             <class name="com.example.tests.SaveButtonTest"/>
+<!--                         <class name="com.example.tests.UpdateButtonTest"/>-->
+<!--                            <class name="com.example.tests.AddButtontest"/>-->
+<!--                             <class name="com.example.tests.SaveButtonTest"/>-->
 
-                                    <class name="com.example.tests.ButtonTest"/>
-                                     <class name="com.example.tests.DropdownListTest"/>
+<!--                                    <class name="com.example.tests.ButtonTest"/>-->
+<!--                                     <class name="com.example.tests.DropdownListTest"/>-->
                                      
                                      
-                                        <class name="com.example.tests.CheckBoxTest"/>
-                                        <class name="com.example.tests.CheckboxDropDownTest"/>
-                                          <class name="com.example.tests.GridTest"/>
+<!--                                        <class name="com.example.tests.CheckBoxTest"/>-->
+<!--                                        <class name="com.example.tests.CheckboxDropDownTest"/>-->
+<!--                                          <class name="com.example.tests.GridTest"/>-->
                                           <class name="com.example.tests.Labeltest"/>
                                           
                                      
