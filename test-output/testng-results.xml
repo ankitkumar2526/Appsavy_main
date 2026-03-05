@@ -1,235 +1,359 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
+<testng-results ignored="0" total="17" passed="16" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-05T12:07:20 IST" name="Playwright POM + ExtentReports Suite" finished-at="2026-03-05T12:08:10 IST" duration-ms="50459">
+  <suite started-at="2026-03-05T22:43:47 IST" name="Default suite" finished-at="2026-03-05T22:44:39 IST" duration-ms="52892">
     <groups>
     </groups>
-    <test started-at="2026-03-05T12:07:20 IST" name="AppSavy Tests" finished-at="2026-03-05T12:08:10 IST" duration-ms="50459">
-      <class name="com.example.tests.Labeltest">
-        <test-method is-config="true" signature="setupPlaywright()[pri:0, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:07:20 IST" name="setupPlaywright" finished-at="2026-03-05T12:07:39 IST" duration-ms="18628" status="PASS">
+    <test started-at="2026-03-05T22:43:47 IST" name="Default test" finished-at="2026-03-05T22:44:39 IST" duration-ms="52892">
+      <class name="com.example.tests.Textboxtest">
+        <test-method is-config="true" signature="setupPlaywright()[pri:0, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:43:47 IST" name="setupPlaywright" finished-at="2026-03-05T22:44:03 IST" duration-ms="16544" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPlaywright -->
-        <test-method is-config="true" signature="initPages()[pri:0, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:07:39 IST" name="initPages" finished-at="2026-03-05T12:07:41 IST" duration-ms="2033" status="PASS">
+        <test-method is-config="true" signature="initPages()[pri:0, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:03 IST" name="initPages" finished-at="2026-03-05T22:44:03 IST" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPages -->
-        <test-method signature="loginFunctionality()[pri:1, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:07:41 IST" name="loginFunctionality" description="Verify Admin Role Functionality" finished-at="2026-03-05T12:07:49 IST" duration-ms="7844" status="PASS">
+        <test-method signature="Multilingual()[pri:1, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:03 IST" name="Multilingual" description="Naviagte to textbox form" finished-at="2026-03-05T22:44:27 IST" duration-ms="24119" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginFunctionality -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:07:49 IST" name="captureFailureScreenshot" finished-at="2026-03-05T12:07:49 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- Multilingual -->
+        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:27 IST" name="captureFailureScreenshot" finished-at="2026-03-05T22:44:27 IST" duration-ms="13" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginFunctionality status=SUCCESS method=Labeltest.loginFunctionality()[pri:1, instance:com.example.tests.Labeltest@2cd76f31] output={null}]]]>
+                <![CDATA[[TestResult name=Multilingual status=SUCCESS method=Textboxtest.Multilingual()[pri:1, instance:com.example.tests.Textboxtest@24269709] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailureScreenshot -->
-        <test-method signature="testAdminRole()[pri:2, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:07:49 IST" name="testAdminRole" description="Verify Admin Role Functionality" finished-at="2026-03-05T12:07:51 IST" duration-ms="2078" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAdminRole -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:07:51 IST" name="captureFailureScreenshot" finished-at="2026-03-05T12:07:51 IST" duration-ms="1" status="PASS">
+        <test-method signature="testMultilingualFunctionality(java.lang.String,[Ljava.lang.String;)[pri:2, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:27 IST" name="testMultilingualFunctionality" description="Verify Multilingual Functionality" data-provider="multilingualData" finished-at="2026-03-05T22:44:29 IST" duration-ms="2012" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testAdminRole status=SUCCESS method=Labeltest.testAdminRole()[pri:2, instance:com.example.tests.Labeltest@2cd76f31] output={null}]]]>
+                <![CDATA[yes]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@2ea6e30c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultilingualFunctionality -->
+        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:30 IST" name="captureFailureScreenshot" finished-at="2026-03-05T22:44:30 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMultilingualFunctionality status=SUCCESS method=Textboxtest.testMultilingualFunctionality(java.lang.String,[Ljava.lang.String;)[pri:2, instance:com.example.tests.Textboxtest@24269709] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailureScreenshot -->
-        <test-method signature="testControlTestProject()[pri:3, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:07:51 IST" name="testControlTestProject" description="Verify Control Test Functionality" finished-at="2026-03-05T12:08:05 IST" duration-ms="14139" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testControlTestProject -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:08:05 IST" name="captureFailureScreenshot" finished-at="2026-03-05T12:08:05 IST" duration-ms="1" status="PASS">
+        <test-method signature="testMultilingualFunctionality(java.lang.String,[Ljava.lang.String;)[pri:2, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:30 IST" name="testMultilingualFunctionality" description="Verify Multilingual Functionality" data-provider="multilingualData" finished-at="2026-03-05T22:44:32 IST" duration-ms="1939" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testControlTestProject status=SUCCESS method=Labeltest.testControlTestProject()[pri:3, instance:com.example.tests.Labeltest@2cd76f31] output={null}]]]>
+                <![CDATA[no]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@561868a0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultilingualFunctionality -->
+        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:32 IST" name="captureFailureScreenshot" finished-at="2026-03-05T22:44:32 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMultilingualFunctionality status=SUCCESS method=Textboxtest.testMultilingualFunctionality(java.lang.String,[Ljava.lang.String;)[pri:2, instance:com.example.tests.Textboxtest@24269709] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailureScreenshot -->
-        <test-method signature="verifyLabel_control_PageSuccessfullyOpen()[pri:5, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:08:05 IST" name="verifyLabel_control_PageSuccessfullyOpen" description="by fetching the page title, verifying the correct page is opened" finished-at="2026-03-05T12:08:05 IST" duration-ms="15" status="PASS">
+        <test-method signature="testCaptionFontSize()[pri:3, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:32 IST" name="testCaptionFontSize" description="Verify caption font size" finished-at="2026-03-05T22:44:32 IST" duration-ms="627" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLabel_control_PageSuccessfullyOpen -->
-        <test-method signature="verifyCaptionVisiblity()[pri:6, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:08:05 IST" name="verifyCaptionVisiblity" description="verifying that caption of the control is visible" finished-at="2026-03-05T12:08:06 IST" duration-ms="552" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCaptionVisiblity -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:08:05 IST" name="captureFailureScreenshot" finished-at="2026-03-05T12:08:05 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- testCaptionFontSize -->
+        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:32 IST" name="captureFailureScreenshot" finished-at="2026-03-05T22:44:32 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLabel_control_PageSuccessfullyOpen status=SUCCESS method=Labeltest.verifyLabel_control_PageSuccessfullyOpen()[pri:5, instance:com.example.tests.Labeltest@2cd76f31] output={null}]]]>
+                <![CDATA[[TestResult name=testCaptionFontSize status=SUCCESS method=Textboxtest.testCaptionFontSize()[pri:3, instance:com.example.tests.Textboxtest@24269709] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailureScreenshot -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:08:06 IST" name="captureFailureScreenshot" finished-at="2026-03-05T12:08:06 IST" duration-ms="1" status="PASS">
+        <test-method signature="testCaptionTextColor()[pri:4, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:32 IST" name="testCaptionTextColor" description="Verify caption text color" finished-at="2026-03-05T22:44:32 IST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaptionTextColor -->
+        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:32 IST" name="captureFailureScreenshot" finished-at="2026-03-05T22:44:32 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyCaptionVisiblity status=SUCCESS method=Labeltest.verifyCaptionVisiblity()[pri:6, instance:com.example.tests.Labeltest@2cd76f31] output={null}]]]>
+                <![CDATA[[TestResult name=testCaptionTextColor status=SUCCESS method=Textboxtest.testCaptionTextColor()[pri:4, instance:com.example.tests.Textboxtest@24269709] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailureScreenshot -->
-        <test-method signature="verifyFormSubmissionWithoutFillingzTheMandatoryField()[pri:7, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:08:06 IST" name="verifyFormSubmissionWithoutFillingzTheMandatoryField" description="verify blank mandatory field submission is successful" finished-at="2026-03-05T12:08:06 IST" duration-ms="211" status="PASS">
+        <test-method signature="testCaptionBackgroundColor()[pri:5, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:32 IST" name="testCaptionBackgroundColor" description="Verify caption background color" finished-at="2026-03-05T22:44:32 IST" duration-ms="50" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyFormSubmissionWithoutFillingzTheMandatoryField -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:08:06 IST" name="captureFailureScreenshot" finished-at="2026-03-05T12:08:06 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- testCaptionBackgroundColor -->
+        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:32 IST" name="captureFailureScreenshot" finished-at="2026-03-05T22:44:32 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyFormSubmissionWithoutFillingzTheMandatoryField status=SUCCESS method=Labeltest.verifyFormSubmissionWithoutFillingzTheMandatoryField()[pri:7, instance:com.example.tests.Labeltest@2cd76f31] output={null}]]]>
+                <![CDATA[[TestResult name=testCaptionBackgroundColor status=SUCCESS method=Textboxtest.testCaptionBackgroundColor()[pri:5, instance:com.example.tests.Textboxtest@24269709] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailureScreenshot -->
-        <test-method signature="verifyTranslatorWorking()[pri:8, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:08:06 IST" name="verifyTranslatorWorking" description="verifying translator is working fine for Label control" finished-at="2026-03-05T12:08:07 IST" duration-ms="746" status="PASS">
+        <test-method signature="testMaxLengthFunctionality()[pri:6, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:32 IST" name="testMaxLengthFunctionality" description="Verify max length Functionality" finished-at="2026-03-05T22:44:33 IST" duration-ms="548" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTranslatorWorking -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:08:07 IST" name="captureFailureScreenshot" finished-at="2026-03-05T12:08:07 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- testMaxLengthFunctionality -->
+        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:33 IST" name="captureFailureScreenshot" finished-at="2026-03-05T22:44:33 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyTranslatorWorking status=SUCCESS method=Labeltest.verifyTranslatorWorking()[pri:8, instance:com.example.tests.Labeltest@2cd76f31] output={null}]]]>
+                <![CDATA[[TestResult name=testMaxLengthFunctionality status=SUCCESS method=Textboxtest.testMaxLengthFunctionality()[pri:6, instance:com.example.tests.Textboxtest@24269709] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailureScreenshot -->
-        <test-method signature="verifyUniqueControlNamesOnSingleForm()[pri:9, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:08:07 IST" name="verifyUniqueControlNamesOnSingleForm" description="verifying unique control names on a single form" finished-at="2026-03-05T12:08:07 IST" duration-ms="19" status="PASS">
+        <test-method signature="testValueFontSize()[pri:7, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:33 IST" name="testValueFontSize" description="Verify value font size" finished-at="2026-03-05T22:44:33 IST" duration-ms="30" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUniqueControlNamesOnSingleForm -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:08:07 IST" name="captureFailureScreenshot" finished-at="2026-03-05T12:08:07 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- testValueFontSize -->
+        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:33 IST" name="captureFailureScreenshot" finished-at="2026-03-05T22:44:33 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUniqueControlNamesOnSingleForm status=SUCCESS method=Labeltest.verifyUniqueControlNamesOnSingleForm()[pri:9, instance:com.example.tests.Labeltest@2cd76f31] output={null}]]]>
+                <![CDATA[[TestResult name=testValueFontSize status=SUCCESS method=Textboxtest.testValueFontSize()[pri:7, instance:com.example.tests.Textboxtest@24269709] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailureScreenshot -->
-        <test-method signature="verifyCheckboxDisplayed()[pri:10, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:08:07 IST" name="verifyCheckboxDisplayed" description="verifying that checkbox are displayed on the form" finished-at="2026-03-05T12:08:07 IST" duration-ms="524" status="PASS">
+        <test-method signature="testValueTextColor()[pri:8, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:33 IST" name="testValueTextColor" description="Verify value text color" finished-at="2026-03-05T22:44:33 IST" duration-ms="28" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCheckboxDisplayed -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:08:07 IST" name="captureFailureScreenshot" finished-at="2026-03-05T12:08:07 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- testValueTextColor -->
+        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:33 IST" name="captureFailureScreenshot" finished-at="2026-03-05T22:44:33 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyCheckboxDisplayed status=SUCCESS method=Labeltest.verifyCheckboxDisplayed()[pri:10, instance:com.example.tests.Labeltest@2cd76f31] output={null}]]]>
+                <![CDATA[[TestResult name=testValueTextColor status=SUCCESS method=Textboxtest.testValueTextColor()[pri:8, instance:com.example.tests.Textboxtest@24269709] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailureScreenshot -->
-        <test-method signature="verifyCaptionFontSize()[pri:11, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:08:07 IST" name="verifyCaptionFontSize" finished-at="2026-03-05T12:08:08 IST" duration-ms="494" status="PASS">
+        <test-method signature="testValueBackgroundColor()[pri:9, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:33 IST" name="testValueBackgroundColor" description="Verify value background color" finished-at="2026-03-05T22:44:33 IST" duration-ms="27" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCaptionFontSize -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:08:08 IST" name="captureFailureScreenshot" finished-at="2026-03-05T12:08:08 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- testValueBackgroundColor -->
+        <test-method signature="testverifyCaptionShowTest()[pri:11, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:33 IST" name="testverifyCaptionShowTest" description="Verify the behavior of the &#039;Show Caption&#039; property working correctly when I select show caption as ON." finished-at="2026-03-05T22:44:33 IST" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testverifyCaptionShowTest -->
+        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:33 IST" name="captureFailureScreenshot" finished-at="2026-03-05T22:44:33 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyCaptionFontSize status=SUCCESS method=Labeltest.verifyCaptionFontSize()[pri:11, instance:com.example.tests.Labeltest@2cd76f31] output={null}]]]>
+                <![CDATA[[TestResult name=testValueBackgroundColor status=SUCCESS method=Textboxtest.testValueBackgroundColor()[pri:9, instance:com.example.tests.Textboxtest@24269709] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailureScreenshot -->
-        <test-method signature="verifyCaptionFotColor()[pri:12, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:08:08 IST" name="verifyCaptionFotColor" finished-at="2026-03-05T12:08:08 IST" duration-ms="501" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCaptionFotColor -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:08:08 IST" name="captureFailureScreenshot" finished-at="2026-03-05T12:08:08 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:33 IST" name="captureFailureScreenshot" finished-at="2026-03-05T22:44:33 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyCaptionFotColor status=SUCCESS method=Labeltest.verifyCaptionFotColor()[pri:12, instance:com.example.tests.Labeltest@2cd76f31] output={null}]]]>
+                <![CDATA[[TestResult name=testverifyCaptionShowTest status=SUCCESS method=Textboxtest.testverifyCaptionShowTest()[pri:11, instance:com.example.tests.Textboxtest@24269709] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailureScreenshot -->
-        <test-method signature="verifyBackgroundColor_Checkbox()[pri:13, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:08:08 IST" name="verifyBackgroundColor_Checkbox" description="verifying that checkboxes are displayed on the form" finished-at="2026-03-05T12:08:09 IST" duration-ms="456" status="PASS">
+        <test-method signature="testVerifyCaptionNotShown()[pri:12, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:33 IST" name="testVerifyCaptionNotShown" description="Verify that the behavior of the &#039;Show Caption&#039; property on the text box when I select DO NOT SHOW  option ." finished-at="2026-03-05T22:44:33 IST" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyBackgroundColor_Checkbox -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:08:09 IST" name="captureFailureScreenshot" finished-at="2026-03-05T12:08:09 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- testVerifyCaptionNotShown -->
+        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:33 IST" name="captureFailureScreenshot" finished-at="2026-03-05T22:44:33 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyBackgroundColor_Checkbox status=SUCCESS method=Labeltest.verifyBackgroundColor_Checkbox()[pri:13, instance:com.example.tests.Labeltest@2cd76f31] output={null}]]]>
+                <![CDATA[[TestResult name=testVerifyCaptionNotShown status=SUCCESS method=Textboxtest.testVerifyCaptionNotShown()[pri:12, instance:com.example.tests.Textboxtest@24269709] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailureScreenshot -->
-        <test-method signature="verifyWidthOfTheControl()[pri:15, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:08:09 IST" name="verifyWidthOfTheControl" description="verifying width of the checkbox control on the form" finished-at="2026-03-05T12:08:09 IST" duration-ms="571" status="PASS">
+        <test-method signature="testInvalidEmailShowsErrorPopup()[pri:13, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:33 IST" name="testInvalidEmailShowsErrorPopup" description="Verify that an error message is shown when an invalid email is entered and the form is not submitted." finished-at="2026-03-05T22:44:34 IST" duration-ms="273" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyWidthOfTheControl -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:08:09 IST" name="captureFailureScreenshot" finished-at="2026-03-05T12:08:09 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- testInvalidEmailShowsErrorPopup -->
+        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:34 IST" name="captureFailureScreenshot" finished-at="2026-03-05T22:44:34 IST" duration-ms="7" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyWidthOfTheControl status=SUCCESS method=Labeltest.verifyWidthOfTheControl()[pri:15, instance:com.example.tests.Labeltest@2cd76f31] output={null}]]]>
+                <![CDATA[[TestResult name=testInvalidEmailShowsErrorPopup status=SUCCESS method=Textboxtest.testInvalidEmailShowsErrorPopup()[pri:13, instance:com.example.tests.Textboxtest@24269709] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailureScreenshot -->
-        <test-method signature="verifyCheckboxEnabled()[pri:16, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:08:09 IST" name="verifyCheckboxEnabled" description="verifying that checkbox is enabled on the form" finished-at="2026-03-05T12:08:10 IST" duration-ms="515" status="PASS">
+        <test-method signature="testValidEmailSubmitsFormSuccessfully()[pri:14, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:34 IST" name="testValidEmailSubmitsFormSuccessfully" description="Verify that the form is submitted successfully when a valid email is entered." finished-at="2026-03-05T22:44:34 IST" duration-ms="740" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCheckboxEnabled -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:08:10 IST" name="captureFailureScreenshot" finished-at="2026-03-05T12:08:10 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- testValidEmailSubmitsFormSuccessfully -->
+        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:34 IST" name="captureFailureScreenshot" finished-at="2026-03-05T22:44:34 IST" duration-ms="53" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyCheckboxEnabled status=SUCCESS method=Labeltest.verifyCheckboxEnabled()[pri:16, instance:com.example.tests.Labeltest@2cd76f31] output={null}]]]>
+                <![CDATA[[TestResult name=testValidEmailSubmitsFormSuccessfully status=SUCCESS method=Textboxtest.testValidEmailSubmitsFormSuccessfully()[pri:14, instance:com.example.tests.Textboxtest@24269709] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailureScreenshot -->
-        <test-method is-config="true" signature="teardownPlaywright()[pri:0, instance:com.example.tests.Labeltest@2cd76f31]" started-at="2026-03-05T12:08:10 IST" name="teardownPlaywright" finished-at="2026-03-05T12:08:10 IST" duration-ms="603" status="PASS">
+        <test-method signature="testCaptionIsDisplayedOnLeftOfTextbox()[pri:15, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:34 IST" name="testCaptionIsDisplayedOnLeftOfTextbox" description="Verify that on caption type  If I set Left then caption should left on textbox." finished-at="2026-03-05T22:44:35 IST" duration-ms="258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaptionIsDisplayedOnLeftOfTextbox -->
+        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:35 IST" name="captureFailureScreenshot" finished-at="2026-03-05T22:44:35 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCaptionIsDisplayedOnLeftOfTextbox status=SUCCESS method=Textboxtest.testCaptionIsDisplayedOnLeftOfTextbox()[pri:15, instance:com.example.tests.Textboxtest@24269709] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureFailureScreenshot -->
+        <test-method signature="testDefaultValueVisible()[pri:17, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:35 IST" name="testDefaultValueVisible" description="Verify the behavior of the &#039;Default Value&#039; property on the Textbox." finished-at="2026-03-05T22:44:35 IST" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDefaultValueVisible -->
+        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:35 IST" name="captureFailureScreenshot" finished-at="2026-03-05T22:44:35 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testDefaultValueVisible status=SUCCESS method=Textboxtest.testDefaultValueVisible()[pri:17, instance:com.example.tests.Textboxtest@24269709] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureFailureScreenshot -->
+        <test-method signature="testUniqueProperty()[pri:18, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:35 IST" name="testUniqueProperty" description="Verify the behavior of the &#039;Unique&#039; property on the Textbox" finished-at="2026-03-05T22:44:36 IST" duration-ms="1278" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected UNIQUE popup but got: Please Enter mandfield expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected UNIQUE popup but got: Please Enter mandfield expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.example.pages.Textbox.lambda$1(Textbox.java:399)
+at com.microsoft.playwright.impl.PageImpl$1.accept(PageImpl.java:1599)
+at com.microsoft.playwright.impl.PageImpl$1.accept(PageImpl.java:1595)
+at com.microsoft.playwright.impl.ListenerCollection.notify(ListenerCollection.java:45)
+at com.microsoft.playwright.impl.BrowserContextImpl.handleEvent(BrowserContextImpl.java:687)
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:295)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+at com.microsoft.playwright.Locator.click(Locator.java:2543)
+at com.example.pages.Textbox.verifyDuplicateValueNotAllowedWhenUniqueIsEnabled(Textbox.java:408)
+at com.example.tests.Textboxtest.testUniqueProperty(Textboxtest.java:181)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUniqueProperty -->
+        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:36 IST" name="captureFailureScreenshot" finished-at="2026-03-05T22:44:38 IST" duration-ms="2228" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testUniqueProperty status=FAILURE method=Textboxtest.testUniqueProperty()[pri:18, instance:com.example.tests.Textboxtest@24269709] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureFailureScreenshot -->
+        <test-method is-config="true" signature="teardownPlaywright()[pri:0, instance:com.example.tests.Textboxtest@24269709]" started-at="2026-03-05T22:44:38 IST" name="teardownPlaywright" finished-at="2026-03-05T22:44:39 IST" duration-ms="1170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownPlaywright -->
-      </class> <!-- com.example.tests.Labeltest -->
-    </test> <!-- AppSavy Tests -->
-  </suite> <!-- Playwright POM + ExtentReports Suite -->
+      </class> <!-- com.example.tests.Textboxtest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

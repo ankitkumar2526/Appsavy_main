@@ -173,17 +173,18 @@ public class Textboxtest extends BaseTest {
 			    	 }
                  
 			    	 
-						/*
-						 * @Test(priority = 18, description =
-						 * "Verify the behavior of the 'Unique' property on the Textbox") public void
-						 * testUniqueProperty() {
-						 * 
-						 * textboxPage.verifyDuplicateValueNotAllowedWhenUniqueIsEnabled(); //
-						 * textboxPage.textboxmandatoryFieldValidation(); }
-						 */
+						
+						  @Test(priority = 18, description =
+						  "Verify the behavior of the 'Unique' property on the Textbox") public void
+						 testUniqueProperty() {
+						 
+						  textboxPage.verifyDuplicateValueNotAllowedWhenUniqueIsEnabled(); //
+						// textboxPage.textboxmandatoryFieldValidation(); 
+						  }
+						 
 
+						  }
 			    	 
-			    	 }
 
 
 

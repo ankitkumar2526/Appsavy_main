@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>12/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>16/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Feb 26 22:03:39 IST 2026</td>
+<td>Started on:</td><td>Thu Mar 05 22:43:47 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>57 seconds (57406 ms)</td>
+<tr><td>Total time:</td><td>52 seconds (52892 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,115 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.example.tests.Textboxtest.testUniqueProperty()'><b>testUniqueProperty</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify the behavior of the 'Unique' property on the Textbox</td>
+<td><div><pre>java.lang.AssertionError: Expected UNIQUE popup but got: Please Enter mandfield expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.example.pages.Textbox.lambda$1(Textbox.java:399)
+	at com.microsoft.playwright.impl.PageImpl$1.accept(PageImpl.java:1599)
+	at com.microsoft.playwright.impl.PageImpl$1.accept(PageImpl.java:1595)
+	at com.microsoft.playwright.impl.ListenerCollection.notify(ListenerCollection.java:45)
+	at com.microsoft.playwright.impl.BrowserContextImpl.handleEvent(BrowserContextImpl.java:687)
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:295)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+	at com.microsoft.playwright.Locator.click(Locator.java:2543)
+	at com.example.pages.Textbox.verifyDuplicateValueNotAllowedWhenUniqueIsEnabled(Textbox.java:408)
+	at com.example.tests.Textboxtest.testUniqueProperty(Textboxtest.java:181)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2099051403", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2099051403'><pre>java.lang.AssertionError: Expected UNIQUE popup but got: Please Enter mandfield expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.example.pages.Textbox.lambda$1(Textbox.java:399)
+	at com.microsoft.playwright.impl.PageImpl$1.accept(PageImpl.java:1599)
+	at com.microsoft.playwright.impl.PageImpl$1.accept(PageImpl.java:1595)
+	at com.microsoft.playwright.impl.ListenerCollection.notify(ListenerCollection.java:45)
+	at com.microsoft.playwright.impl.BrowserContextImpl.handleEvent(BrowserContextImpl.java:687)
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:295)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+	at com.microsoft.playwright.Locator.click(Locator.java:2543)
+	at com.example.pages.Textbox.verifyDuplicateValueNotAllowedWhenUniqueIsEnabled(Textbox.java:408)
+	at com.example.tests.Textboxtest.testUniqueProperty(Textboxtest.java:181)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>com.example.tests.Textboxtest@24269709</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,65 +185,85 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.example.tests.SaveButtonTest.verifyFontColor()'><b>verifyFontColor</b><br>Test class: com.example.tests.SaveButtonTest<br>Test method: Verify Font Color is #470af0</td>
+<td title='com.example.tests.Textboxtest.testValueBackgroundColor()'><b>testValueBackgroundColor</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify value background color</td>
 <td></td>
 <td>0</td>
-<td>com.example.tests.SaveButtonTest@6ed3ccb2</td></tr>
+<td>com.example.tests.Textboxtest@24269709</td></tr>
 <tr>
-<td title='com.example.tests.SaveButtonTest.verifyHindiInputSavedAndVisibleInGrid()'><b>verifyHindiInputSavedAndVisibleInGrid</b><br>Test class: com.example.tests.SaveButtonTest<br>Test method: Verify Hindi input is saved and visible in Language Details grid</td>
-<td></td>
-<td>2</td>
-<td>com.example.tests.SaveButtonTest@6ed3ccb2</td></tr>
-<tr>
-<td title='com.example.tests.SaveButtonTest.Multilingual()'><b>Multilingual</b><br>Test class: com.example.tests.SaveButtonTest<br>Test method: Naviagte to SaveButton  form</td>
-<td></td>
-<td>25</td>
-<td>com.example.tests.SaveButtonTest@6ed3ccb2</td></tr>
-<tr>
-<td title='com.example.tests.SaveButtonTest.verifyVisibilityNControlIsNotVisible()'><b>verifyVisibilityNControlIsNotVisible</b><br>Test class: com.example.tests.SaveButtonTest<br>Test method: Verify that control name 'visibility_n' is not available on web form</td>
+<td title='com.example.tests.Textboxtest.testCaptionFontSize()'><b>testCaptionFontSize</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify caption font size</td>
 <td></td>
 <td>0</td>
-<td>com.example.tests.SaveButtonTest@6ed3ccb2</td></tr>
+<td>com.example.tests.Textboxtest@24269709</td></tr>
 <tr>
-<td title='com.example.tests.SaveButtonTest.verifyFormButtonNameRemainsEnglishAfterLanguageChange()'><b>verifyFormButtonNameRemainsEnglishAfterLanguageChange</b><br>Test class: com.example.tests.SaveButtonTest<br>Test method: Verify form button name 'Vertical' remains in English after language change</td>
+<td title='com.example.tests.Textboxtest.testMaxLengthFunctionality()'><b>testMaxLengthFunctionality</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify max length Functionality</td>
 <td></td>
 <td>0</td>
-<td>com.example.tests.SaveButtonTest@6ed3ccb2</td></tr>
+<td>com.example.tests.Textboxtest@24269709</td></tr>
 <tr>
-<td title='com.example.tests.SaveButtonTest.verifyVisibilityYControlIsVisible()'><b>verifyVisibilityYControlIsVisible</b><br>Test class: com.example.tests.SaveButtonTest<br>Test method: Verify that control name 'visibility_y' is visible on web form</td>
+<td title='com.example.tests.Textboxtest.testInvalidEmailShowsErrorPopup()'><b>testInvalidEmailShowsErrorPopup</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify that an error message is shown when an invalid email is entered and the form is not submitted.</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.Textboxtest@24269709</td></tr>
+<tr>
+<td title='com.example.tests.Textboxtest.testDefaultValueVisible()'><b>testDefaultValueVisible</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify the behavior of the 'Default Value' property on the Textbox.</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.Textboxtest@24269709</td></tr>
+<tr>
+<td title='com.example.tests.Textboxtest.testCaptionTextColor()'><b>testCaptionTextColor</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify caption text color</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.Textboxtest@24269709</td></tr>
+<tr>
+<td title='com.example.tests.Textboxtest.testverifyCaptionShowTest()'><b>testverifyCaptionShowTest</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify the behavior of the 'Show Caption' property working correctly when I select show caption as ON.</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.Textboxtest@24269709</td></tr>
+<tr>
+<td title='com.example.tests.Textboxtest.testVerifyCaptionNotShown()'><b>testVerifyCaptionNotShown</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify that the behavior of the 'Show Caption' property on the text box when I select DO NOT SHOW  option .</td>
+<td></td>
+<td>0</td>
+<td>com.example.tests.Textboxtest@24269709</td></tr>
+<tr>
+<td title='com.example.tests.Textboxtest.testMultilingualFunctionality()'><b>testMultilingualFunctionality</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify Multilingual Functionality<br>Parameters: no, [Ljava.lang.String;@561868a0</td>
 <td></td>
 <td>1</td>
-<td>com.example.tests.SaveButtonTest@6ed3ccb2</td></tr>
+<td>com.example.tests.Textboxtest@24269709</td></tr>
 <tr>
-<td title='com.example.tests.SaveButtonTest.verifySaveButtonNameChnageInHindi()'><b>verifySaveButtonNameChnageInHindi</b><br>Test class: com.example.tests.SaveButtonTest<br>Test method: Verify savebutton name is displayed in Hindi after language change</td>
+<td title='com.example.tests.Textboxtest.testMultilingualFunctionality()'><b>testMultilingualFunctionality</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify Multilingual Functionality<br>Parameters: yes, [Ljava.lang.String;@2ea6e30c</td>
+<td></td>
+<td>2</td>
+<td>com.example.tests.Textboxtest@24269709</td></tr>
+<tr>
+<td title='com.example.tests.Textboxtest.testValueFontSize()'><b>testValueFontSize</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify value font size</td>
 <td></td>
 <td>0</td>
-<td>com.example.tests.SaveButtonTest@6ed3ccb2</td></tr>
+<td>com.example.tests.Textboxtest@24269709</td></tr>
 <tr>
-<td title='com.example.tests.SaveButtonTest.verifyFontSizeIs25()'><b>verifyFontSizeIs25</b><br>Test class: com.example.tests.SaveButtonTest<br>Test method: Verify Font Size is set to 30 for save button named 'Font Size'</td>
+<td title='com.example.tests.Textboxtest.testCaptionIsDisplayedOnLeftOfTextbox()'><b>testCaptionIsDisplayedOnLeftOfTextbox</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify that on caption type  If I set Left then caption should left on textbox.</td>
 <td></td>
 <td>0</td>
-<td>com.example.tests.SaveButtonTest@6ed3ccb2</td></tr>
+<td>com.example.tests.Textboxtest@24269709</td></tr>
 <tr>
-<td title='com.example.tests.SaveButtonTest.verifyCaptionPropertyIsVisibleForCaptionTestControl()'><b>verifyCaptionPropertyIsVisibleForCaptionTestControl</b><br>Test class: com.example.tests.SaveButtonTest<br>Test method: Verify the 'Caption' property is visible to users for control 'Caption Test' on web form</td>
+<td title='com.example.tests.Textboxtest.testCaptionBackgroundColor()'><b>testCaptionBackgroundColor</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify caption background color</td>
 <td></td>
 <td>0</td>
-<td>com.example.tests.SaveButtonTest@6ed3ccb2</td></tr>
+<td>com.example.tests.Textboxtest@24269709</td></tr>
 <tr>
-<td title='com.example.tests.SaveButtonTest.verifyFontStyleIsBold()'><b>verifyFontStyleIsBold</b><br>Test class: com.example.tests.SaveButtonTest<br>Test method: Verify Font Style is Bold</td>
+<td title='com.example.tests.Textboxtest.testValidEmailSubmitsFormSuccessfully()'><b>testValidEmailSubmitsFormSuccessfully</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify that the form is submitted successfully when a valid email is entered.</td>
 <td></td>
 <td>0</td>
-<td>com.example.tests.SaveButtonTest@6ed3ccb2</td></tr>
+<td>com.example.tests.Textboxtest@24269709</td></tr>
 <tr>
-<td title='com.example.tests.SaveButtonTest.verifyBackgroundColor()'><b>verifyBackgroundColor</b><br>Test class: com.example.tests.SaveButtonTest<br>Test method: Verify Background Color is #fac01e</td>
+<td title='com.example.tests.Textboxtest.testValueTextColor()'><b>testValueTextColor</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Verify value text color</td>
 <td></td>
 <td>0</td>
-<td>com.example.tests.SaveButtonTest@6ed3ccb2</td></tr>
+<td>com.example.tests.Textboxtest@24269709</td></tr>
 <tr>
-<td title='com.example.tests.SaveButtonTest.verifySaveButtonNameInHindi()'><b>verifySaveButtonNameInHindi</b><br>Test class: com.example.tests.SaveButtonTest<br>Test method: Verify Save button name 'भाषा' is visible on the form</td>
+<td title='com.example.tests.Textboxtest.Multilingual()'><b>Multilingual</b><br>Test class: com.example.tests.Textboxtest<br>Test method: Naviagte to textbox form</td>
 <td></td>
-<td>0</td>
-<td>com.example.tests.SaveButtonTest@6ed3ccb2</td></tr>
+<td>24</td>
+<td>com.example.tests.Textboxtest@24269709</td></tr>
 </table><p>
 </body>
 </html>

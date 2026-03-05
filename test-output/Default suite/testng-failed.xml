@@ -3,25 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.example.tests.SaveButtonTest">
+      <class name="com.example.tests.Textboxtest">
         <methods>
-          <include name="verifyVisibilityYControlIsVisible"/>
-          <include name="Multilingual"/>
-          <include name="verifyBackgroundColor"/>
-          <include name="verifyHindiInputSavedAndVisibleInGrid"/>
-          <include name="initPages"/>
           <include name="captureFailureScreenshot"/>
-          <include name="verifyFontStyleIsBold"/>
-          <include name="verifySaveButtonNameChnageInHindi"/>
-          <include name="verifySaveButtonNameInHindi"/>
-          <include name="verifyCaptionPropertyIsVisibleForCaptionTestControl"/>
+          <include name="initPages"/>
           <include name="teardownPlaywright"/>
-          <include name="verifyFontColor"/>
-          <include name="verifyFontSizeIs25"/>
-          <include name="verifyFormButtonNameRemainsEnglishAfterLanguageChange"/>
+          <include name="testUniqueProperty"/>
           <include name="setupPlaywright"/>
         </methods>
-      </class> <!-- com.example.tests.SaveButtonTest -->
+      </class> <!-- com.example.tests.Textboxtest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

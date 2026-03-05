@@ -1,5 +1,7 @@
 package com.example.pages;
 
+import static org.testng.Assert.fail;
+
 import java.security.PrivateKey;
 
 import javax.swing.plaf.ColorUIResource;
@@ -135,24 +137,36 @@ public class Textbox {
 	
 	public void maxLength()
 	{
-		try {
+	//	try {
 			
 		max_length=page.locator("#ctrl109403"); 
 		max_length.isVisible();
-		String ss = "aaaaa";
-		String actualmaxlength= ss.length() > 5 ? ss.substring(0, 5) : ss;
-		page.fill("#ctrl109403", actualmaxlength);
+		String ss = "aaaaaaaaaa";
+		max_length.fill(ss);
+		String actuallength= max_length.inputValue();
+		if (actuallength.length() ==4) {
+		    System.out.println("Input correctly limited to 5 characters: " + actuallength);
+		} else {
+		   Assert.assertEquals(actuallength.length(), 5, "Input length is not limited to 5 characters. Actual length: " + actuallength.length());
+		}
+		
+		//String actualmaxlength= ss.length()< 5 ? ss.substring(0, 5) : ss;
+	//	page.fill("#ctrl109403", actualmaxlength);
 		
 		}
-		 catch (Exception e) {
-				System.out.println("An error occurred: " + e.getMessage());
-			}
-	}
+		// catch (Exception e) {
+		//		System.out.println("An error occurred: " + e.getMessage());
+		//	}
+	//}
+	
+	
+	
 	public void incorrect_Length()
 	{
 		try {
 		max_length.clear();
 		max_length.pressSequentially("AAAAAAAA");
+		System.out.println("Entered value: " + max_length.inputValue());
 		PlaywrightAssertions.assertThat(max_length).hasValue("AAAAA");
 	
 		}
@@ -236,23 +250,23 @@ public class Textbox {
 
 	public void verifyCaptionShown() {
 
-	    maxLengthCaptionLabel = page.locator("#lblCap109403");
-	    maxLengthTextbox = page.locator("#lblCap109403");
+	    maxLengthCaptionLabel = page.locator("#lblCap109511");
+	    maxLengthTextbox = page.locator("#lblCap109511");
 
 	    Assert.assertTrue(maxLengthTextbox.isVisible());
 	    Assert.assertTrue(maxLengthCaptionLabel.isVisible());
 
 	    String capText = maxLengthCaptionLabel.textContent().trim().toLowerCase();
-	    Assert.assertTrue(capText.contains("max length"));
+	    Assert.assertTrue(capText.contains("showcaptionon"));
 	}
 
 	public void verifyCaptionNotShown() {
 
 	    
-	    textBox = page.locator("#ctrl109407");
+	    textBox = page.locator("#ctrl109512");
 
 	    
-	    captionLabel = page.locator("#lblCap109407");
+	    captionLabel = page.locator("#lblCap109512");
 
 	    
 	    Assert.assertTrue(textBox.isVisible(), "Textbox should be visible");
@@ -360,7 +374,7 @@ public class Textbox {
        		   
        		    Assert.assertTrue(
        		        !actualValue.isEmpty(),
-       		        "FAILED: Multiline Textbox is empty but it should contain some value"
+       		        "FAILED:  Textbox is empty but it should contain some value"
        		    );
        		}
         
