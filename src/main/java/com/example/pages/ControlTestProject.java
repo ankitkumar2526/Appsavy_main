@@ -39,6 +39,13 @@ public class ControlTestProject {
 		  PlaywrightAssertions.assertThat(page.locator("#span11773")).isVisible();
 		  
 	  }
+      public void contest_Searchbox ()
+	  {
+		  search=page.getByPlaceholder("Search");
+		  search.fill("contest");
+		  PlaywrightAssertions.assertThat(page.locator("#span665")).isVisible();
+		  
+	  }
       
       public void textbox()
       {
@@ -82,5 +89,33 @@ public class ControlTestProject {
           drp_dwn = page.locator("#a33769"); 
           drp_dwn.click();
       }
+      
+      public void AddButton()
+      {
+          user = page.locator("#span665");
+          user.click();
 
+          drp_dwn = page.locator("#a33721"); 
+          drp_dwn.click();
+      }
+      
+      
+      public void UpdateButton()
+      {
+          user = page.locator("#span665");
+          user.click();
+
+          drp_dwn = page.locator("#a33719"); 
+          drp_dwn.click();
+      }
+      
+      
+      public void SaveButton()
+      {
+          user = page.locator("#span665");
+          user.click();
+
+          drp_dwn = page.locator("#a33716"); 
+          drp_dwn.click();
+      }
 }

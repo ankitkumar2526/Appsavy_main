@@ -1,6 +1,8 @@
 package com.example.pages;
 
+
 import com.microsoft.playwright.Page;
+
 
 public class LoginPage {
     private final Page page;
@@ -38,4 +40,8 @@ public class LoginPage {
         }
         return "No message found";
     }
+    
+    
+    
+
 }

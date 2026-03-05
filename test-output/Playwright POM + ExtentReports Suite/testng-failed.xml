@@ -6,15 +6,36 @@
   </listeners>
   <test thread-count="5" name="AppSavy Tests(failed)">
     <classes>
-      <class name="com.example.tests.Textboxtest">
+      <class name="com.example.tests.UpdateButtonTest">
         <methods>
+          <include name="verifyCaptionPropertyIsVisibleForCaptionTestControl"/>
           <include name="captureFailureScreenshot"/>
           <include name="initPages"/>
+          <include name="verifySaveButtonNameChnageInHindi"/>
           <include name="teardownPlaywright"/>
-          <include name="testVerifyAlphanumericDataTypeAllowsAlphaNumericInput"/>
           <include name="setupPlaywright"/>
         </methods>
-      </class> <!-- com.example.tests.Textboxtest -->
+      </class> <!-- com.example.tests.UpdateButtonTest -->
+      <class name="com.example.tests.AddButtontest">
+        <methods>
+          <include name="captureFailureScreenshot"/>
+          <include name="teardownPlaywright"/>
+          <include name="verifyCaptionPropertyIsVisibleForCaptionTestControl"/>
+          <include name="setupPlaywright"/>
+          <include name="initPages"/>
+        </methods>
+      </class> <!-- com.example.tests.AddButtontest -->
+      <class name="com.example.tests.DropdownListTest">
+        <methods>
+          <include name="verifyImageIsLeftOfCaptionForImageButton"/>
+          <include name="captureFailureScreenshot"/>
+          <include name="verifyWidthButtonSizeIs50"/>
+          <include name="initPages"/>
+          <include name="teardownPlaywright"/>
+          <include name="setupPlaywright"/>
+          <include name="verifyCaptionPropertyIsVisibleForCaptionTestControl"/>
+        </methods>
+      </class> <!-- com.example.tests.DropdownListTest -->
     </classes>
   </test> <!-- AppSavy Tests(failed) -->
 </suite> <!-- Failed suite [Playwright POM + ExtentReports Suite] -->
