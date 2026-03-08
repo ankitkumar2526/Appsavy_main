@@ -118,4 +118,13 @@ public class ControlTestProject {
           drp_dwn = page.locator("#a33716"); 
           drp_dwn.click();
       }
+      
+      public void textbox2()
+      {
+		  user=page.locator("#span11773");
+		  user.click();
+		  
+		  txt_box=page.locator("#a33775");
+		  txt_box.click();
+	  }
 }

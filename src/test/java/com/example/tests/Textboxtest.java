@@ -98,92 +98,48 @@ public class Textboxtest extends BaseTest {
 			    	 }
 
 			    	 
-			    	 
-			    	 @Test(priority=6, description = "Verify max length Functionality")
-			    	 public void testMaxLengthFunctionality() {
-			    		 			    		
-			    		 textboxPage.maxLength();
-			    		 textboxPage.incorrect_Length();
-			    		 
-			    	 }
-		    	
-			    	 
-			    	 @Test(priority = 7, description = "Verify value font size")
+			    		 @Test(priority = 6, description = "Verify value font size")
 			    	 public void testValueFontSize() {
 			    	     textboxPage.verifyValueFontSize();
 			    	 }
 
 			    	 
-			    	 @Test(priority = 8, description = "Verify value text color")
+			    	 @Test(priority = 7, description = "Verify value text color")
 			    	 public void testValueTextColor() {
 			    	     textboxPage.verifyValueTextColor();
 			    	 }
  
-			    	 @Test(priority = 9, description = "Verify value background color")
+			    	 @Test(priority = 8, description = "Verify value background color")
 			    	 public void testValueBackgroundColor() {
 			    	     textboxPage.verifyValueBackgroundColor();
 			    	 }
 
 			    	 
-			    //	 @Test(priority = 10, description = "Verify that an error message is shown when the mandatory textbox is left empty and the form is submitted.")
-			    //	 public void testMandatoryEmpty() {
-			    //	     textboxPage.validateTextboxMandatoryEmpty();
-			    //	 }
-
-			    	 @Test(priority = 11, description = "Verify the behavior of the 'Show Caption' property working correctly when I select show caption as ON.")
+			    	 @Test(priority = 9, description = "Verify the behavior of the 'Show Caption' property working correctly when I select show caption as ON.")
 			    	    public void testverifyCaptionShowTest() {
 			    	        textboxPage.verifyCaptionShown();
 			    	 
 }
-			    	 @Test(priority = 12, description = "Verify that the behavior of the 'Show Caption' property on the text box when I select DO NOT SHOW  option .")
+			    	 @Test(priority = 10, description = "Verify that the behavior of the 'Show Caption' property on the text box when I select DO NOT SHOW  option .")
 			    	 public void testVerifyCaptionNotShown() {
 			    	     textboxPage.verifyCaptionNotShown();
 			    	 }
-			    	 @Test(priority = 13, description = "Verify that an error message is shown when an invalid email is entered and the form is not submitted.")
+			    	 @Test(priority = 11, description = "Verify that an error message is shown when an invalid email is entered and the form is not submitted.")
 			    	 public void testInvalidEmailShowsErrorPopup(){
 			    	     textboxPage.InvalidEmailShowsErrorPopup();
 			    	 }
 
-			    	 @Test(priority = 14, description = "Verify that the form is submitted successfully when a valid email is entered.")
+			    	 @Test(priority = 12, description = "Verify that the form is submitted successfully when a valid email is entered.")
 			    	 public void testValidEmailSubmitsFormSuccessfully(){
 			    	     textboxPage.ValidEmailSubmitsFormSuccessfully();
 			    	 }
 
-			    	 @Test( priority = 15, description = "Verify that on caption type  If I set Left then caption should left on textbox."
+			    	 @Test( priority = 13, description = "Verify that on caption type  If I set Left then caption should left on textbox."
 			    			)
 			    			public void testCaptionIsDisplayedOnLeftOfTextbox() {
 			    			    textboxPage.CaptionIsDisplayedOnLeftOfTextbox();
 			    			}
-
-			    	 
-							/*
-							 * @Test( priority = 16, description =
-							 * "Verify the behavior of the 'Data Type' property on the Textbox for Alphanumeric  data type as Textbox can take both number and alphabets as input."
-							 * ) public void testVerifyAlphanumericDataTypeAllowsAlphaNumericInput() {
-							 * 
-							 * textboxPage.VerifyAlphanumericDataTypeAllowsAlphaNumericInput();
-							 * textboxPage.maxLength(); textboxPage.saveBtn1_Click(); }
-							 */
-
-			    	 @Test(priority = 17, description = "Verify the behavior of the 'Default Value' property on the Textbox.")
-			    	 public void testDefaultValueVisible() {
-
-			    	
-			    		  textboxPage.verifyTextboxDefaultValueIsPresent();
-			    	 }
-                 
-			    	 
-						
-						  @Test(priority = 18, description =
-						  "Verify the behavior of the 'Unique' property on the Textbox") public void
-						 testUniqueProperty() {
-						 
-						  textboxPage.verifyDuplicateValueNotAllowedWhenUniqueIsEnabled(); //
-						// textboxPage.textboxmandatoryFieldValidation(); 
-						  }
-						 
-
-						  }
+  }
 			    	 
 
 

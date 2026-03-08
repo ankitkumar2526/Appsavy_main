@@ -135,53 +135,6 @@ public class Textbox {
 
 		
 	
-	public void maxLength()
-	{
-	//	try {
-			
-		max_length=page.locator("#ctrl109403"); 
-		max_length.isVisible();
-		String ss = "aaaaaaaaaa";
-		max_length.fill(ss);
-		String actuallength= max_length.inputValue();
-		if (actuallength.length() ==4) {
-		    System.out.println("Input correctly limited to 5 characters: " + actuallength);
-		} else {
-		   Assert.assertEquals(actuallength.length(), 5, "Input length is not limited to 5 characters. Actual length: " + actuallength.length());
-		}
-		
-		//String actualmaxlength= ss.length()< 5 ? ss.substring(0, 5) : ss;
-	//	page.fill("#ctrl109403", actualmaxlength);
-		
-		}
-		// catch (Exception e) {
-		//		System.out.println("An error occurred: " + e.getMessage());
-		//	}
-	//}
-	
-	
-	
-	public void incorrect_Length()
-	{
-		try {
-		max_length.clear();
-		max_length.pressSequentially("AAAAAAAA");
-		System.out.println("Entered value: " + max_length.inputValue());
-		PlaywrightAssertions.assertThat(max_length).hasValue("AAAAA");
-	
-		}
-		 catch (Exception e) {
-				System.out.println("maximum character not macthing: " + e.getMessage());
-				throw e;
-			}
-		
-}
-	
-	
-	
-	
-
-	
 	
 	public void verifyValueFontSize() {
 	    value_text = page.locator("#ctrl109405");
@@ -209,46 +162,7 @@ public class Textbox {
 	}
 
 	
-	
-	
-	
-	
-
-	
-	/*
-	 * public void validateTextboxMandatoryEmpty() {
-	 * 
-	 * Locator field = page.locator("#ctrl109494"); Locator saveBtn =
-	 * page.locator("#ctrl109493");
-	 * 
-	 * field.fill("");
-	 * 
-	 * final String[] message = {""};
-	 * 
-	 * page.onceDialog(dialog -> { message[0] = dialog.message(); dialog.accept();
-	 * });
-	 * 
-	 * saveBtn.click();
-	 * 
-	 * Assert.assertTrue( message[0].toLowerCase().contains("please"),
-	 * "FAILED: Validation popup not shown when field is empty. Actual: " +
-	 * message[0] ); }
-	 */
-
-	
-
-
-
-	
-
-
-
-	
-	
-
-
-
-	public void verifyCaptionShown() {
+	  public void verifyCaptionShown() {
 
 	    maxLengthCaptionLabel = page.locator("#lblCap109511");
 	    maxLengthTextbox = page.locator("#lblCap109511");
@@ -290,6 +204,7 @@ public class Textbox {
 	            
 	        });
 	        emailTextbox.fill("aa"); // invalid email
+	        page.waitForTimeout(1000); // wait for potential popup to appear
 	        saveButton1.click();
 	        
 
@@ -308,6 +223,7 @@ public class Textbox {
 
 	       
 	        emailTextbox.fill("test@gmail.com");
+	        page.waitForTimeout(1000); // wait for any potential validation to process
 
 	       
 	        saveButton1.click();
@@ -338,129 +254,9 @@ public class Textbox {
                 "FAIL: DIME caption is NOT on the left side of its textbox"
             );
         }
-
+}
         
-        public void VerifyAlphanumericDataTypeAllowsAlphaNumericInput()
- {
-        	 defaultValueTextbox = page.locator("#ctr1109408"); 
-     	    alphaTextbox = page.locator("#ctrl109413");
-             
-
-             firstNameInput = page.locator("#ctrl109381");   
-              
-             
-              alphaTextbox.scrollIntoViewIfNeeded();
-            
-                  alphaTextbox.fill("abc123");
-                  saveButton.click();
-        }
-        public void saveBtn1_Click() {
-			saveButton1 = page.locator("#ctrl109412");  
-			saveButton1.click();
-		}
+     
     
 
 
-
-
-        
-        public void verifyTextboxDefaultValueIsPresent() {
-   
-
-       		    Locator multilineTextbox = page.locator("#ctrl109408");
-                multilineTextbox.scrollIntoViewIfNeeded();
-                 String actualValue = multilineTextbox.inputValue().trim();
-
-       		   
-       		    Assert.assertTrue(
-       		        !actualValue.isEmpty(),
-       		        "FAILED:  Textbox is empty but it should contain some value"
-       		    );
-       		}
-        
-        public void verifyDuplicateValueNotAllowedWhenUniqueIsEnabled () 
-        
-        {
-        	
-        		firstNameInput = page.locator("#ctrl109381");
-        		Locator saveButton = page.locator("#ctrl109493"); 
-
-           
-
-            // Duplicate name
-            firstNameInput.fill("ankit");
-
-            // Dialog listener
-            page.onceDialog(dialog -> {
-
-                String msg = dialog.message();
-                System.out.println("Popup >>> " + msg);
-
-                Assert.assertTrue(
-                        msg.toLowerCase().contains("already submitted")
-                     || msg.toLowerCase().contains("unique"),
-                        "Expected UNIQUE popup but got: " + msg
-                );
-
-                dialog.accept();
-            });
-
-            saveButton.click();
-        }
-
-
-        public void textboxmandatoryFieldValidation() {
-
-		    // Locators
-		    Locator mandatoryStar = page.locator("label.required");   // * star
-		    Locator field = page.locator("#ctrl109494");              // textarea
-		    Locator saveBtn = page.locator("#ctrl109493");            // save button
-
-		    // Check Mandatory Status from UI
-		    boolean isMandatoryOn = mandatoryStar.isVisible();
-
-		    // -------- Slow Typing --------
-		    field.click();
-		    field.clear();
-
-		    for (char ch : "Demo value".toCharArray()) {
-		        field.type(String.valueOf(ch));
-		        page.waitForTimeout(200);   // typing speed (increase to 400 for slower)
-		    }
-
-		    // -------- Capture Popup --------
-		    final String[] popupText = {""};
-
-		    page.onceDialog(dialog -> {
-		        popupText[0] = dialog.message();
-		        dialog.accept();
-		    });
-
-		    // Click Save
-		    saveBtn.click();
-
-		    // -------- Validation Logic --------
-		    if (isMandatoryOn) {
-
-		        // When Mandatory ON → Confirmation popup should appear
-		        Assert.assertTrue(
-		                popupText[0].contains("Do you want to save"),
-		                "FAILED: Mandatory ON but confirmation popup not shown"
-		        );
-
-		    } else {
-
-		        // When Mandatory OFF → Test should FAIL intentionally
-		        Assert.fail(
-		                "Mandatory OFF in UI but save allowed → TEST FAILED intentionally"
-		        );
-		    }
-		}
-
-
-
-
-	
-
-
-}

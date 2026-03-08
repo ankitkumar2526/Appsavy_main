@@ -2,6 +2,7 @@ package com.example.pages;
 
 
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.WaitUntilState;
 
 
 public class LoginPage {
@@ -18,8 +19,21 @@ public class LoginPage {
     }
 
     public void navigate() {
-        page.navigate(ConfigReader.get("login.url"));
-    }
+//    	System.out.println("Navigating to login page: " + ConfigReader.get("login.url"));
+     //   page.navigate(ConfigReader.get("login.url"));
+        
+    
+    		 
+    	    String url = ConfigReader.get("login.url");
+    	    System.out.println("Navigating to login page: " + url);
+    	 
+    	    page.navigate(url, new Page.NavigateOptions()
+    	            .setWaitUntil(WaitUntilState.NETWORKIDLE));
+    	}
+       
+    
+    
+    
 
     public void login(String username, String password) {
         page.fill(usernameLocator, username);

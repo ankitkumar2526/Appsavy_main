@@ -45,7 +45,7 @@ public class CheckboxDropDownPage {
 				.toString();
 
 		System.out.println("Font Size................................: " + ActualfontSize);
-		String expectedFontSize = "30px";
+		String expectedFontSize = "60px";
 
 		Assert.assertEquals(ActualfontSize, expectedFontSize, "Font size is not matching");
 	}

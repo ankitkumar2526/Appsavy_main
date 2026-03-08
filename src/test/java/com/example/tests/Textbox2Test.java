@@ -1,6 +1,6 @@
 package com.example.tests;
 
-import java.util.concurrent.PriorityBlockingQueue;
+
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -11,26 +11,28 @@ import com.aventstack.extentreports.Status;
 import com.example.pages.AdminRole;
 import com.example.pages.ConfigReader;
 import com.example.pages.ControlTestProject;
-import com.example.pages.DashboardPage;
+
 import com.example.pages.Textbox;
+import com.example.pages.Textbox2Page;
 import com.microsoft.playwright.assertions.PlaywrightAssertions;
 import com.example.pages.LoginPage;
+import com.example.pages.MultilineTextbox;
 
-public class Textboxtest2 extends BaseTest {
+public class Textbox2Test extends BaseTest {
 
 	LoginPage loginPage;
-    DashboardPage dashboardPage;
+   
     AdminRole adminRolePage;
     ControlTestProject controlTestProject;
-    Textbox textboxPage;
+    Textbox2Page textboxPage;
     
     @BeforeClass
     public void initPages() {
         loginPage = new LoginPage(page);
-        dashboardPage = new DashboardPage(page);
+        
         adminRolePage = new AdminRole(page);
         controlTestProject = new ControlTestProject(page);
-        textboxPage = new Textbox(page);
+        textboxPage = new Textbox2Page(page);
     }
     
 	@DataProvider(name = "multilingualData")
@@ -58,30 +60,50 @@ public class Textboxtest2 extends BaseTest {
 			page.waitForTimeout(2000);
 		            controlTestProject.clipBar();
 			    	controlTestProject.searchbox();
-			    	controlTestProject.textbox();
+			    	controlTestProject.textbox2();
 			    	 page.waitForTimeout(2000);
 	 }
+	 
+	 
+	 @Test(
+	    	    priority = 2,
+	    	    description = "Verify the behavior of the 'Default Value' property on the  Textbox2."
+	    	)
+	    	public void MultilineDefaultValueVisible() {
+
+	    	    textboxPage.verifyTextbox2DefaultValueIsPresent();
+	    	}
+	 
+	 @Test(priority = 3, description = "Verify Unique Property for Textbox2")
+	 public void verifyUniqueProperty() {
+
+	 textboxPage.checkUniqueProperty();
+
+	 }
+	 @Test(priority = 4, description = "Verify Max Length Validation for Textbox2")
+	 public void verifyMaxLengthTextbox() {
+
+	 textboxPage.verifyMaxLengthValidation();
+
+	 }
+
+	 
+	 
+	 @Test(
+	    	    priority = 5,
+	    	    description = "Verify mandatory field behaviour: PASS when mandatory ON, FAIL when mandatory OFF"
+	    	)
+	    	public void Mandatory_Field_Validation() {
+
+	    	  //  Textbox2 pageObj = new Textbox2(page);
+	    	    textboxPage.mandatoryFieldValidation();
+	    	}
+	 
+	 @Test(priority = 6, description = "Verify Alphanumeric Validation for Textbox2")
+	 public void verifyAlphanumericTextbox() {
+
+	     textboxPage.verifyAlphanumericValidation();
+
+	 }
+}
 			    	
-			    	 @Test(priority=2,dataProvider = "multilingualData", description = "Verify Multilingual Functionality")
-			    	public void testMultilingualFunctionality(String MultilingualOption, String[] names) {
-			    	
-			    	// Multilingual Functionality
-			    	log(Status.INFO, "Starting Multilingual Functionality Test with option: " + MultilingualOption);
-			    	textboxPage.selectMultilingualOption(MultilingualOption);
-			    	// handling option
-			    	if ("yes".equalsIgnoreCase(MultilingualOption)) {
-			    		for(String name : names) {
-			    		log(Status.INFO, "Verifying name: " + name);
-			    		textboxPage.multilingualFunctionality(names[0], names[1]);
-			    		}
-			    	} else if ("no".equalsIgnoreCase(MultilingualOption)) {
-			    	    String singlename =	names[0];
-			    	   	log(Status.INFO, "Verifying singlename: " + singlename);
-			    	   	textboxPage.multilingualFunctionality(singlename, singlename);
-			    	}
-			    	 }
-			    	 
-			    	 
-			    	public void 
-  } 
-		

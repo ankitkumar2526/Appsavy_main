@@ -6,36 +6,23 @@
   </listeners>
   <test thread-count="5" name="AppSavy Tests(failed)">
     <classes>
-      <class name="com.example.tests.UpdateButtonTest">
+      <class name="com.example.tests.Textboxtest">
         <methods>
-          <include name="verifyCaptionPropertyIsVisibleForCaptionTestControl"/>
+          <include name="testValueBackgroundColor"/>
+          <include name="testverifyCaptionShowTest"/>
           <include name="captureFailureScreenshot"/>
           <include name="initPages"/>
-          <include name="verifySaveButtonNameChnageInHindi"/>
+          <include name="testInvalidEmailShowsErrorPopup"/>
+          <include name="testCaptionIsDisplayedOnLeftOfTextbox"/>
+          <include name="testVerifyCaptionNotShown"/>
           <include name="teardownPlaywright"/>
+          <include name="testValueTextColor"/>
           <include name="setupPlaywright"/>
+          <include name="testCaptionBackgroundColor"/>
+          <include name="testValueFontSize"/>
+          <include name="testValidEmailSubmitsFormSuccessfully"/>
         </methods>
-      </class> <!-- com.example.tests.UpdateButtonTest -->
-      <class name="com.example.tests.AddButtontest">
-        <methods>
-          <include name="captureFailureScreenshot"/>
-          <include name="teardownPlaywright"/>
-          <include name="verifyCaptionPropertyIsVisibleForCaptionTestControl"/>
-          <include name="setupPlaywright"/>
-          <include name="initPages"/>
-        </methods>
-      </class> <!-- com.example.tests.AddButtontest -->
-      <class name="com.example.tests.DropdownListTest">
-        <methods>
-          <include name="verifyImageIsLeftOfCaptionForImageButton"/>
-          <include name="captureFailureScreenshot"/>
-          <include name="verifyWidthButtonSizeIs50"/>
-          <include name="initPages"/>
-          <include name="teardownPlaywright"/>
-          <include name="setupPlaywright"/>
-          <include name="verifyCaptionPropertyIsVisibleForCaptionTestControl"/>
-        </methods>
-      </class> <!-- com.example.tests.DropdownListTest -->
+      </class> <!-- com.example.tests.Textboxtest -->
     </classes>
   </test> <!-- AppSavy Tests(failed) -->
 </suite> <!-- Failed suite [Playwright POM + ExtentReports Suite] -->
