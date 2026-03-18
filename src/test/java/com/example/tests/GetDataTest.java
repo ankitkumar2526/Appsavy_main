@@ -164,17 +164,17 @@ public void verifyGetDataTriggeredAfterDocumentUploadLoadsVegetablesDropdown() {
 }
 
 
-/*
- * @Test( priority = 11, description =
- * "Verify GetData is triggered automatically on page load and dropdown values are loaded"
- * )
- * 
- * public void verifyGetDataTriggeredOnPageLoad() {
- * 
- * getDataPage.verifyGetDataTriggeredOnPageLoad();
- * 
- * }
- */
+
+ @Test( priority = 11, description =
+ "Verify GetData is triggered automatically on page load and dropdown values are loaded"
+  )
+  
+ public void verifyGetDataTriggeredOnPageLoad() {
+ 
+  getDataPage.verifyGetDataTriggeredOnPageLoad();
+  
+ }
+ 
 
 
 
