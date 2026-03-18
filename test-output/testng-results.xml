@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-17T08:17:59 IST" name="Default suite" finished-at="2026-03-17T08:19:00 IST" duration-ms="60592">
+  <suite started-at="2026-03-18T16:04:23 IST" name="Default suite" finished-at="2026-03-18T16:05:34 IST" duration-ms="71068">
     <groups>
     </groups>
-    <test started-at="2026-03-17T08:17:59 IST" name="Default test" finished-at="2026-03-17T08:19:00 IST" duration-ms="60592">
+    <test started-at="2026-03-18T16:04:23 IST" name="Default test" finished-at="2026-03-18T16:05:34 IST" duration-ms="71068">
       <class name="com.example.tests.ShowHideTest">
-        <test-method is-config="true" signature="setupPlaywright()[pri:0, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-17T08:17:59 IST" name="setupPlaywright" finished-at="2026-03-17T08:18:11 IST" duration-ms="11137" status="PASS">
+        <test-method is-config="true" signature="setupPlaywright()[pri:0, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-18T16:04:23 IST" name="setupPlaywright" finished-at="2026-03-18T16:04:44 IST" duration-ms="20291" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPlaywright -->
-        <test-method is-config="true" signature="initPages()[pri:0, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-17T08:18:11 IST" name="initPages" finished-at="2026-03-17T08:18:11 IST" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="initPages()[pri:0, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-18T16:04:44 IST" name="initPages" finished-at="2026-03-18T16:04:44 IST" duration-ms="30" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPages -->
-        <test-method signature="Multilingual()[pri:1, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-17T08:18:11 IST" name="Multilingual" description="Naviagte to showHide (action) form" finished-at="2026-03-17T08:18:29 IST" duration-ms="18545" status="PASS">
+        <test-method signature="Multilingual()[pri:1, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-18T16:04:44 IST" name="Multilingual" description="Naviagte to showHide (action) form" finished-at="2026-03-18T16:05:02 IST" duration-ms="18595" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Multilingual -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-17T08:18:29 IST" name="captureFailureScreenshot" finished-at="2026-03-17T08:18:29 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-18T16:05:02 IST" name="captureFailureScreenshot" finished-at="2026-03-18T16:05:02 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,11 +30,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailureScreenshot -->
-        <test-method signature="verifyShowLabelOnTypingTest()[pri:2, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-17T08:18:29 IST" name="verifyShowLabelOnTypingTest" description="Verify Show label is visible after typing in textbox" finished-at="2026-03-17T08:18:29 IST" duration-ms="104" status="PASS">
+        <test-method signature="verifyShowLabelOnTypingTest()[pri:2, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-18T16:05:02 IST" name="verifyShowLabelOnTypingTest" description="Verify Show label is visible after typing in textbox" finished-at="2026-03-18T16:05:03 IST" duration-ms="242" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyShowLabelOnTypingTest -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-17T08:18:29 IST" name="captureFailureScreenshot" finished-at="2026-03-17T08:18:29 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-18T16:05:03 IST" name="captureFailureScreenshot" finished-at="2026-03-18T16:05:03 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,11 +45,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailureScreenshot -->
-        <test-method signature="verifyHideLabelOnTypingTest()[pri:3, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-17T08:18:29 IST" name="verifyHideLabelOnTypingTest" description="Verify Hide label is hidden after typing in textbox" finished-at="2026-03-17T08:18:39 IST" duration-ms="10106" status="PASS">
+        <test-method signature="verifyHideLabelOnTypingTest()[pri:3, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-18T16:05:03 IST" name="verifyHideLabelOnTypingTest" description="Verify Hide label is hidden after typing in textbox" finished-at="2026-03-18T16:05:13 IST" duration-ms="10309" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHideLabelOnTypingTest -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-17T08:18:39 IST" name="captureFailureScreenshot" finished-at="2026-03-17T08:18:39 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-18T16:05:13 IST" name="captureFailureScreenshot" finished-at="2026-03-18T16:05:13 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,11 +60,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailureScreenshot -->
-        <test-method signature="verifyShowLabelOnCheckboxSelectTest()[pri:4, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-17T08:18:39 IST" name="verifyShowLabelOnCheckboxSelectTest" description="Verify label becomes visible after selecting checkbox" finished-at="2026-03-17T08:18:49 IST" duration-ms="10073" status="PASS">
+        <test-method signature="verifyShowLabelOnCheckboxSelectTest()[pri:4, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-18T16:05:13 IST" name="verifyShowLabelOnCheckboxSelectTest" description="Verify label becomes visible after selecting checkbox" finished-at="2026-03-18T16:05:24 IST" duration-ms="10635" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyShowLabelOnCheckboxSelectTest -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-17T08:18:49 IST" name="captureFailureScreenshot" finished-at="2026-03-17T08:18:49 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-18T16:05:24 IST" name="captureFailureScreenshot" finished-at="2026-03-18T16:05:24 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,11 +75,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailureScreenshot -->
-        <test-method signature="verifyHideLabelOnCheckboxSelectTest()[pri:5, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-17T08:18:49 IST" name="verifyHideLabelOnCheckboxSelectTest" description="Verify HideLabelOnCheckboxChange is visible initially and gets hidden after selecting checkbox" finished-at="2026-03-17T08:19:00 IST" duration-ms="10080" status="PASS">
+        <test-method signature="verifyHideLabelOnCheckboxSelectTest()[pri:5, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-18T16:05:24 IST" name="verifyHideLabelOnCheckboxSelectTest" description="Verify HideLabelOnCheckboxChange is visible initially and gets hidden after selecting checkbox" finished-at="2026-03-18T16:05:34 IST" duration-ms="10091" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHideLabelOnCheckboxSelectTest -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-17T08:19:00 IST" name="captureFailureScreenshot" finished-at="2026-03-17T08:19:00 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-18T16:05:34 IST" name="captureFailureScreenshot" finished-at="2026-03-18T16:05:34 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -90,7 +90,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailureScreenshot -->
-        <test-method is-config="true" signature="teardownPlaywright()[pri:0, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-17T08:19:00 IST" name="teardownPlaywright" finished-at="2026-03-17T08:19:00 IST" duration-ms="459" status="PASS">
+        <test-method is-config="true" signature="teardownPlaywright()[pri:0, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-18T16:05:34 IST" name="teardownPlaywright" finished-at="2026-03-18T16:05:34 IST" duration-ms="682" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownPlaywright -->
