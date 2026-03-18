@@ -127,4 +127,24 @@ public class ControlTestProject {
 		  txt_box=page.locator("#a33775");
 		  txt_box.click();
 	  }
+      
+      public void getData()
+      {
+		  user=page.locator("#span665");
+		  user.click();
+		  
+		  txt_box=page.locator("#a33783");
+		  txt_box.click();
+	  }
+      
+      public void showHide()
+      {
+		  user=page.locator("#span665");
+		  user.click();
+		  
+		  txt_box=page.locator("#a33799");
+		  txt_box.click();
+	  }
+      
+      
 }

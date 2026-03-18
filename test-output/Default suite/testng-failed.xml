@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.example.tests.Textbox2Test">
+      <class name="com.example.tests.ShowHideTest">
         <methods>
           <include name="captureFailureScreenshot"/>
           <include name="teardownPlaywright"/>
-          <include name="verifyAlphanumericTextbox"/>
           <include name="setupPlaywright"/>
           <include name="initPages"/>
+          <include name="verifyShowLabelOnTypingTest"/>
         </methods>
-      </class> <!-- com.example.tests.Textbox2Test -->
+      </class> <!-- com.example.tests.ShowHideTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
