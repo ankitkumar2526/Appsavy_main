@@ -11,8 +11,8 @@
         <classes>
          
 
-                          <class name="com.example.tests.Textboxtest"/>
-                              <class name="com.example.tests.Textbox2Test"/>
+<!--                          <class name="com.example.tests.Textboxtest"/>-->
+<!--                              <class name="com.example.tests.Textbox2Test"/>-->
 <!--                     <class name="com.example.tests.Radiobuttontest"/>-->
 <!--                        <class name="com.example.tests.MultilineTextboxTest"/>-->
 <!--                         <class name="com.example.tests.HeadingLabelTest"/>-->
@@ -30,12 +30,22 @@
 <!--                                        <class name="com.example.tests.CheckboxDropDownTest"/>-->
 <!--                                          <class name="com.example.tests.GridTest"/>-->
 <!--                                          <class name="com.example.tests.Labeltest"/>-->
+                                        
                                           
-                                     
-                                     
-                                     
-                                     
-                                     
+<!--                                          <class name="com.example.tests.GetDataTest"/>-->
+<!--                                              <class name="com.example.tests.ShowHideTest"/>-->
+<!--                                              <class name="com.example.tests.ActiveInactiveTest"/>-->
+                                              
+                                              
+                                                         
+<!--                                     <class name="tests.textboxapi"/>-->
+<!--                                    <class name="tests.MultiLineTextboxApi"/>-->
+<!--                                     <class name="tests.RadiobuttonApi"/>-->
+<!--                                     <class name="tests.HeadingLabelApi"/>-->
+<!--                                      <class name="tests.LabelApi"/>-->
+<!--                                     <class name="tests.CheckboxApi"/>-->
+<!--                                     <class name="tests.CheckboxDropdownApi"/>-->
+                                     <class name="tests.GridApi"/>
                                      
                                     
         </classes>

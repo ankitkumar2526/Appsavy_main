@@ -63,7 +63,7 @@ public class MultilineTextbox {
 		            "FAILED: Caption is NOT expected to be visible but it is visible"
 		        );
 		    }
-		}
+	  }
 
 
 	  public void verifyMultilineTextboxDefaultValueIsPresent()

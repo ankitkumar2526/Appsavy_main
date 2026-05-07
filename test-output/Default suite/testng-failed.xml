@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.example.tests.ShowHideTest">
+      <class name="microserviceautomationtest.ComplaintFlowTest">
         <methods>
-          <include name="captureFailureScreenshot"/>
-          <include name="teardownPlaywright"/>
-          <include name="setupPlaywright"/>
-          <include name="initPages"/>
-          <include name="verifyShowLabelOnTypingTest"/>
+          <include name="testComplaintFlow"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.example.tests.ShowHideTest -->
+      </class> <!-- microserviceautomationtest.ComplaintFlowTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

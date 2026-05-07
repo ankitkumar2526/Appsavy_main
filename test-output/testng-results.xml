@@ -1,100 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-18T16:04:23 IST" name="Default suite" finished-at="2026-03-18T16:05:34 IST" duration-ms="71068">
+  <suite started-at="2026-05-07T14:16:55 IST" name="Default suite" finished-at="2026-05-07T14:19:42 IST" duration-ms="166915">
     <groups>
     </groups>
-    <test started-at="2026-03-18T16:04:23 IST" name="Default test" finished-at="2026-03-18T16:05:34 IST" duration-ms="71068">
-      <class name="com.example.tests.ShowHideTest">
-        <test-method is-config="true" signature="setupPlaywright()[pri:0, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-18T16:04:23 IST" name="setupPlaywright" finished-at="2026-03-18T16:04:44 IST" duration-ms="20291" status="PASS">
+    <test started-at="2026-05-07T14:16:55 IST" name="Default test" finished-at="2026-05-07T14:19:42 IST" duration-ms="166915">
+      <class name="tests.MultilineTextboxApi3">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.MultilineTextboxApi3@15de0b3c]" started-at="2026-05-07T14:16:55 IST" name="setUp" finished-at="2026-05-07T14:17:32 IST" duration-ms="36691" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupPlaywright -->
-        <test-method is-config="true" signature="initPages()[pri:0, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-18T16:04:44 IST" name="initPages" finished-at="2026-03-18T16:04:44 IST" duration-ms="30" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.MultilineTextboxApi3@15de0b3c]" started-at="2026-05-07T14:17:32 IST" name="setup" finished-at="2026-05-07T14:17:39 IST" duration-ms="7580" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initPages -->
-        <test-method signature="Multilingual()[pri:1, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-18T16:04:44 IST" name="Multilingual" description="Naviagte to showHide (action) form" finished-at="2026-03-18T16:05:02 IST" duration-ms="18595" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="verifyCaptionFontSize()[pri:1, instance:tests.MultilineTextboxApi3@15de0b3c]" started-at="2026-05-07T14:17:39 IST" name="verifyCaptionFontSize" description="Verify Caption Font Size via API and validate on UI" finished-at="2026-05-07T14:17:48 IST" duration-ms="8532" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Multilingual -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-18T16:05:02 IST" name="captureFailureScreenshot" finished-at="2026-03-18T16:05:02 IST" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Multilingual status=SUCCESS method=ShowHideTest.Multilingual()[pri:1, instance:com.example.tests.ShowHideTest@3d285d7e] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyCaptionFontSize -->
+        <test-method signature="verifyCaptionFontColor()[pri:2, instance:tests.MultilineTextboxApi3@15de0b3c]" started-at="2026-05-07T14:17:48 IST" name="verifyCaptionFontColor" description="Verify Caption Font Color via API and validate on UI" finished-at="2026-05-07T14:17:55 IST" duration-ms="7425" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- captureFailureScreenshot -->
-        <test-method signature="verifyShowLabelOnTypingTest()[pri:2, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-18T16:05:02 IST" name="verifyShowLabelOnTypingTest" description="Verify Show label is visible after typing in textbox" finished-at="2026-03-18T16:05:03 IST" duration-ms="242" status="PASS">
+        </test-method> <!-- verifyCaptionFontColor -->
+        <test-method signature="verifyCaptionFontFamily()[pri:3, instance:tests.MultilineTextboxApi3@15de0b3c]" started-at="2026-05-07T14:17:55 IST" name="verifyCaptionFontFamily" description="Verify Caption Font Family via API and validate on UI" finished-at="2026-05-07T14:18:03 IST" duration-ms="7490" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyShowLabelOnTypingTest -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-18T16:05:03 IST" name="captureFailureScreenshot" finished-at="2026-03-18T16:05:03 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyShowLabelOnTypingTest status=SUCCESS method=ShowHideTest.verifyShowLabelOnTypingTest()[pri:2, instance:com.example.tests.ShowHideTest@3d285d7e] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyCaptionFontFamily -->
+        <test-method signature="verifyCaptionFontStyle()[pri:4, instance:tests.MultilineTextboxApi3@15de0b3c]" started-at="2026-05-07T14:18:03 IST" name="verifyCaptionFontStyle" description="Verify Caption Font Style via API and validate on UI" finished-at="2026-05-07T14:18:10 IST" duration-ms="7155" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- captureFailureScreenshot -->
-        <test-method signature="verifyHideLabelOnTypingTest()[pri:3, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-18T16:05:03 IST" name="verifyHideLabelOnTypingTest" description="Verify Hide label is hidden after typing in textbox" finished-at="2026-03-18T16:05:13 IST" duration-ms="10309" status="PASS">
+        </test-method> <!-- verifyCaptionFontStyle -->
+        <test-method signature="verifyCaptionBackgroundColor()[pri:5, instance:tests.MultilineTextboxApi3@15de0b3c]" started-at="2026-05-07T14:18:10 IST" name="verifyCaptionBackgroundColor" description="Verify Caption Background Color via API and validate on UI" finished-at="2026-05-07T14:18:18 IST" duration-ms="7641" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHideLabelOnTypingTest -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-18T16:05:13 IST" name="captureFailureScreenshot" finished-at="2026-03-18T16:05:13 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyHideLabelOnTypingTest status=SUCCESS method=ShowHideTest.verifyHideLabelOnTypingTest()[pri:3, instance:com.example.tests.ShowHideTest@3d285d7e] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyCaptionBackgroundColor -->
+        <test-method signature="verifyValueFontSize()[pri:6, instance:tests.MultilineTextboxApi3@15de0b3c]" started-at="2026-05-07T14:18:18 IST" name="verifyValueFontSize" description="Verify Value Font Size via API and validate on UI" finished-at="2026-05-07T14:18:26 IST" duration-ms="7909" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- captureFailureScreenshot -->
-        <test-method signature="verifyShowLabelOnCheckboxSelectTest()[pri:4, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-18T16:05:13 IST" name="verifyShowLabelOnCheckboxSelectTest" description="Verify label becomes visible after selecting checkbox" finished-at="2026-03-18T16:05:24 IST" duration-ms="10635" status="PASS">
+        </test-method> <!-- verifyValueFontSize -->
+        <test-method signature="verifyValueFontColor()[pri:7, instance:tests.MultilineTextboxApi3@15de0b3c]" started-at="2026-05-07T14:18:26 IST" name="verifyValueFontColor" description="Verify Value Font Color via API and validate on UI" finished-at="2026-05-07T14:18:32 IST" duration-ms="6093" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyShowLabelOnCheckboxSelectTest -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-18T16:05:24 IST" name="captureFailureScreenshot" finished-at="2026-03-18T16:05:24 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyShowLabelOnCheckboxSelectTest status=SUCCESS method=ShowHideTest.verifyShowLabelOnCheckboxSelectTest()[pri:4, instance:com.example.tests.ShowHideTest@3d285d7e] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyValueFontColor -->
+        <test-method signature="verifyValueFontFamily()[pri:8, instance:tests.MultilineTextboxApi3@15de0b3c]" started-at="2026-05-07T14:18:32 IST" name="verifyValueFontFamily" description="Verify Value Font Family via API and validate on UI" finished-at="2026-05-07T14:18:39 IST" duration-ms="7529" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- captureFailureScreenshot -->
-        <test-method signature="verifyHideLabelOnCheckboxSelectTest()[pri:5, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-18T16:05:24 IST" name="verifyHideLabelOnCheckboxSelectTest" description="Verify HideLabelOnCheckboxChange is visible initially and gets hidden after selecting checkbox" finished-at="2026-03-18T16:05:34 IST" duration-ms="10091" status="PASS">
+        </test-method> <!-- verifyValueFontFamily -->
+        <test-method signature="verifyValueFontStyle()[pri:9, instance:tests.MultilineTextboxApi3@15de0b3c]" started-at="2026-05-07T14:18:39 IST" name="verifyValueFontStyle" description="Verify Value Font Style via API and validate on UI" finished-at="2026-05-07T14:18:47 IST" duration-ms="7768" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHideLabelOnCheckboxSelectTest -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-18T16:05:34 IST" name="captureFailureScreenshot" finished-at="2026-03-18T16:05:34 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyHideLabelOnCheckboxSelectTest status=SUCCESS method=ShowHideTest.verifyHideLabelOnCheckboxSelectTest()[pri:5, instance:com.example.tests.ShowHideTest@3d285d7e] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyValueFontStyle -->
+        <test-method signature="verifyValueBackgroundColor()[pri:10, instance:tests.MultilineTextboxApi3@15de0b3c]" started-at="2026-05-07T14:18:47 IST" name="verifyValueBackgroundColor" description="Verify Value Background Color via API and validate on UI" finished-at="2026-05-07T14:18:55 IST" duration-ms="7671" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- captureFailureScreenshot -->
-        <test-method is-config="true" signature="teardownPlaywright()[pri:0, instance:com.example.tests.ShowHideTest@3d285d7e]" started-at="2026-03-18T16:05:34 IST" name="teardownPlaywright" finished-at="2026-03-18T16:05:34 IST" duration-ms="682" status="PASS">
+        </test-method> <!-- verifyValueBackgroundColor -->
+        <test-method signature="verifyCaptionText()[pri:11, instance:tests.MultilineTextboxApi3@15de0b3c]" started-at="2026-05-07T14:18:55 IST" name="verifyCaptionText" description="Verify Caption Text via API and validate on UI" finished-at="2026-05-07T14:19:03 IST" duration-ms="7975" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardownPlaywright -->
-      </class> <!-- com.example.tests.ShowHideTest -->
+        </test-method> <!-- verifyCaptionText -->
+        <test-method signature="verifyDefaultValue()[pri:12, instance:tests.MultilineTextboxApi3@15de0b3c]" started-at="2026-05-07T14:19:03 IST" name="verifyDefaultValue" description="Verify Default Value is updated via API and reflected correctly on UI" finished-at="2026-05-07T14:19:10 IST" duration-ms="7603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDefaultValue -->
+        <test-method signature="verifyMaxLength()[pri:13, instance:tests.MultilineTextboxApi3@15de0b3c]" started-at="2026-05-07T14:19:10 IST" name="verifyMaxLength" description="Verify Max Length restriction is applied via API and reflected correctly on UI" finished-at="2026-05-07T14:19:33 IST" duration-ms="22679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMaxLength -->
+        <test-method signature="verifyCaptionLeftAlignment()[pri:14, instance:tests.MultilineTextboxApi3@15de0b3c]" started-at="2026-05-07T14:19:33 IST" name="verifyCaptionLeftAlignment" description="Verify Caption is aligned on LEFT side (UI)" finished-at="2026-05-07T14:19:41 IST" duration-ms="7678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCaptionLeftAlignment -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.MultilineTextboxApi3@15de0b3c]" started-at="2026-05-07T14:19:41 IST" name="tearDown" finished-at="2026-05-07T14:19:42 IST" duration-ms="1271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.MultilineTextboxApi3 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

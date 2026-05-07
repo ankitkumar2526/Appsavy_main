@@ -6,23 +6,14 @@
   </listeners>
   <test thread-count="5" name="AppSavy Tests(failed)">
     <classes>
-      <class name="com.example.tests.Textboxtest">
+      <class name="tests.RadiobuttonApi">
         <methods>
-          <include name="testValueBackgroundColor"/>
-          <include name="testverifyCaptionShowTest"/>
-          <include name="captureFailureScreenshot"/>
-          <include name="initPages"/>
-          <include name="testInvalidEmailShowsErrorPopup"/>
-          <include name="testCaptionIsDisplayedOnLeftOfTextbox"/>
-          <include name="testVerifyCaptionNotShown"/>
-          <include name="teardownPlaywright"/>
-          <include name="testValueTextColor"/>
-          <include name="setupPlaywright"/>
-          <include name="testCaptionBackgroundColor"/>
-          <include name="testValueFontSize"/>
-          <include name="testValidEmailSubmitsFormSuccessfully"/>
+          <include name="verifyValueBackgroundColor"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.example.tests.Textboxtest -->
+      </class> <!-- tests.RadiobuttonApi -->
     </classes>
   </test> <!-- AppSavy Tests(failed) -->
 </suite> <!-- Failed suite [Playwright POM + ExtentReports Suite] -->

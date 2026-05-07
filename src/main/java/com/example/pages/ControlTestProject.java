@@ -145,6 +145,13 @@ public class ControlTestProject {
 		  txt_box=page.locator("#a33799");
 		  txt_box.click();
 	  }
-      
+      public void activeInactive()
+      {
+		  user=page.locator("#span665");
+		  user.click();
+		  
+		  txt_box=page.locator("#a33808");
+		  txt_box.click();
+	  }
       
 }
